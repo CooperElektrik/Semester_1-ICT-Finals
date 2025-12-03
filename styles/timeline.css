@@ -15,28 +15,31 @@
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0.4); /* Dark overlay */
-    backdrop-filter: blur(2px);
+    /* backdrop-filter: blur(2px); */
+    z-index: -1;
 }
 
 #timeline-hero h1 {
     position: relative;
-    font-size: 5rem;
-    font-weight: 200;
+    font-size: 4rem;
+    font-weight: 700;
     letter-spacing: -2px;
     line-height: 1;
     margin-bottom: 0.7rem;
-    text-transform: uppercase;
     z-index: 1;
     color: #fff;
-    text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    text-shadow: 0 4px 20px rgba(0,0,0,0.5);
 }
 
 #timeline-hero p {
     position: relative;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: var(--font-sans);
     z-index: 1;
-    color: #f2eee7;
+    color: #fff; /* Changed from #f2eee7 to pure white */
+    font-weight: 500; /* Increased from 300 */
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6); /* Increased blur and opacity */
 }
 
 

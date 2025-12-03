@@ -1,7 +1,7 @@
 /* styles/library.css */
 
 #library-hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/masonry/7.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/masonry/19.png');
     background-size: cover;
     background-position: center;
     align-items: center;
@@ -13,23 +13,25 @@
 
 #library-hero h1 {
     position: relative;
-    font-size: 5rem;
-    font-weight: 200;
+    font-size: 4rem;
+    font-weight: 700;
     letter-spacing: -2px;
     line-height: 1;
     margin-bottom: 0.7rem;
-    text-transform: uppercase;
     z-index: 1;
     color: #fff;
-    text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    text-shadow: 0 4px 20px rgba(0,0,0,0.5);
 }
 
 #library-hero p {
     position: relative;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: var(--font-sans);
     z-index: 1;
     color: #f2eee7;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 #articles-section {

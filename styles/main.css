@@ -25,7 +25,6 @@
        }
 
        html {
-           scroll-snap-type: y proximity;
            scroll-behavior: smooth;
            overscroll-behavior-y: contain;
        }
@@ -99,7 +98,6 @@
            justify-content: center;
            position: relative;
            padding: 6rem 0;
-           scroll-snap-stop: always;
        }
 
        .container {
@@ -123,7 +121,7 @@
            background-position: center;
            align-items: center;
            text-align: center;
-           color: #000;
+           color: #fff;
            padding: 0;
            position: relative;
        }
@@ -132,26 +130,31 @@
            content: "";
            position: absolute;
            inset: 0;
-           background: rgba(255, 255, 255, 0.2);
-           backdrop-filter: contrast(0.9);
+           background: rgba(0, 0, 0, 0.5);
+           z-index: -1;
        }
 
        #hero h1 {
            position: relative;
-           font-size: 6rem;
-           font-weight: 200;
+           font-size: 4rem;
+           font-weight: 700;
+           text-shadow: 0 4px 25px rgba(0,0,0,0.7); /* Increased blur and opacity */
            letter-spacing: -2px;
            line-height: 1;
            margin-bottom: 0.7rem;
-           text-transform: uppercase;
            z-index: 1;
+           color: #fff; /* Explicitly set to white */
        }
 
        #hero p {
            position: relative;
-           font-size: 1.6rem;
+           font-size: 1.2rem;
            font-family: var(--font-sans);
            z-index: 1;
+           color: #fff; /* Changed from #f2eee7 to pure white */
+           font-weight: 500; /* Increased from 300 */
+           letter-spacing: 1px;
+           text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6); /* Increased blur and opacity */
        }
 
        .about-grid {
@@ -279,9 +282,9 @@
 
        #gallery aside .cta-button:hover {
            background-color: #b94e28;
-           transform: scale(1.05);
+           transform: scale(1.05) translateY(-5px);
+           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
        }
-
        .ticket-section {
            /* Restore Original Background */
            background: url("https://upload.wikimedia.org/wikipedia/commons/1/15/Louis_Wain_The_bachelor_party.jpg") center/cover no-repeat;
@@ -334,7 +337,7 @@
        }
 
        .carousel-slide h3 {
-           font-size: 2.2rem;
+           font-size: 2.2 rem;
            color: var(--accent-dark);
            font-family: var(--font-main);
            margin-bottom: 0.5rem;
@@ -458,11 +461,14 @@
            transition: all 0.3s ease-in-out;
        }
 
+       .ticket-form input:focus {
+           transform: translateY(-5px);
+       }
+       
        .ticket-form button:hover {
            background: #b94e28;
-           transform: scale(1.05);
+           transform: scale(1.05) translateY(-5px);
        }
-
        footer {
            background-color: #171412;
            color: #f2eee7;

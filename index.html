@@ -33,8 +33,10 @@
 
     <main>
         <section id="hero" class="unbound">
-            <h1>Louis Wain</h1>
-            <p>A Waltz Through Catland</p>
+            <div style="backdrop-filter: blur(10px) saturate(150%); padding: 5vh; border-radius: 1em; background-color: rgba(0, 0, 0, 0.3); position: relative; z-index: 10;">
+                <h1>Louis Wain</h1>
+                <p>A Waltz Through Catland</p>
+            </div>
         </section>
     
         <section id="about" class="unbound">
@@ -141,7 +143,7 @@
                     <select id="ticket-type" name="ticket-type" required>
                         <option value="" disabled selected>Select Ticket Type</option>
                         <option value="regular">Regular Admission</option>
-                        <option value="curator">Curator’s Twilight Tour</option>
+                        <option value="curator">Curator’s Twilight</option>
                         <option value="midnight">Catwalk Experience</option>
                     </select>
                     <input type="date" id="arrival-date" name="arrival-date" required>
@@ -155,19 +157,20 @@
                 <div class="carousel-content">
                     <!-- Slide 1 -->
                     <div class="carousel-slide active">
-                        <h3>Regular Admission</h3>
+                        <h2>Regular Admission</h2>
                         <p class="price">$18</p>
                         <p>Enjoy full-day access to the entire Louis Wain collection and our permanent exhibitions. Explore at your own pace.</p>
                     </div>
                     <!-- Slide 2 -->
                     <div class="carousel-slide">
-                        <h3>Curator’s Twilight Tour</h3>
+                        <h2>Curator’s Twilight</h2>
                         <p class="price">$32</p>
                         <p>An exclusive after-hours guided tour with our head curator, offering deep insights into Wain's life, work, and fragile mind.</p>
+    
                     </div>
                     <!-- Slide 3 -->
                     <div class="carousel-slide">
-                        <h3>Catwalk Experience</h3>
+                        <h2>Catwalk Experience</h2>
                         <p class="price">$45</p>
                         <p>An immersive evening featuring live music, themed cocktails, and a special presentation on Wain's psychedelic art period.</p>
                     </div>

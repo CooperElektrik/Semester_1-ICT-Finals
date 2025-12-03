@@ -15,9 +15,9 @@
         
         /* Unique Hero for Home */
         #home-hero {
-            background-image: url('assets/home-hero.jpg');
             background-size: cover;
             background-position: center;
+            background-attachment: fixed;
             align-items: center;
             text-align: center;
             color: #fff;
@@ -31,6 +31,18 @@
             font-size: 4rem;
         }
 
+        #home-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: url('assets/masonry/18.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            filter: brightness(0.7); /* Darken the image */
+            /* background-color: rgba(255, 255, 255, 0.1); /* Subtle white overlay for liquid glass vibe */
+        }
+        
         #home-hero p {
             color: #f2eee7;
             font-weight: 300;
@@ -78,9 +90,6 @@
             scrollbar-width: thin;
             scrollbar-color: var(--orange) #f0f0f0;
             
-            scroll-snap-type: y mandatory;
-            scroll-behavior: smooth;
-
             /* Visual polish */
             mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
         }
@@ -277,7 +286,7 @@
     <main>
         <!-- Home Hero -->
         <section id="home-hero" class="unbound">
-            <div style="backdrop-filter: blur(5px); padding: 5vh; border-radius: 1em;">
+            <div style="backdrop-filter: blur(10px) saturate(150%); padding: 5vh; border-radius: 1em;">
             <h1>The Archive of the Mind</h1>
             <p>Preserving the obscure, the psychedelic, and the forgotten.</p>
             </div>
@@ -382,7 +391,7 @@
         </section>
         
         <!-- Newsletter / CTA -->
-        <section id="connect" class="unbound ticket-section" style="background-image: url('assets/orange.png'); background-color: var(--accent-dark); background-color: white;">
+        <section id="connect" class="unbound ticket-section" style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('assets/orange.png'); background-color: var(--accent-dark); background-color: white;">
             <div class="ticket-overlay" style="max-width: 800px; text-align: center;">
                 <h2 style="color: var(--accent-dark);">Join the Foundation</h2>
                 <p class="ticket-sub" style="color: #666;">Receive the quarterly "Obscura" journal and priority access to new openings.</p>
