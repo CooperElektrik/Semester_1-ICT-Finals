@@ -1,6 +1,6 @@
 /* Timeline Specific Styles */
 #timeline-hero {
-    background-image: url('../assets/louis.jpg'); /* Using an existing asset */
+    background-image: url('../assets/louis.jpg'); 
     background-size: cover;
     background-position: center 35%;
     align-items: center;
@@ -14,7 +14,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+    background: rgba(0, 0, 0, 0.2); /* Dark overlay */
     /* backdrop-filter: blur(2px); */
     z-index: -1;
 }

@@ -3,7 +3,7 @@
 
 /* Unique Hero for Home */
 #home-hero {
-    background-image: url('../assets/home-hero.jpg');
+    background-image: url('assets/masonry/18.jpg');
     background-size: cover;
     background-position: center;
     align-items: center;

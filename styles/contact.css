@@ -18,7 +18,7 @@
     text-align: center;
     color: #fff;
     padding: 6rem 1rem;
-    position: relative; /* Added for pseudo-element positioning */
+    position: relative;
 }
 
 #contact-hero::before {
@@ -28,9 +28,9 @@
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/1/15/Louis_Wain_The_bachelor_party.jpg");
     background-size: cover;
     background-position: center;
-    filter: brightness(0.6) contrast(1.2); /* Dim exposure and add punch */
+    filter: brightness(0.8) contrast(1.2);
     z-index: -1;
-    background-color: rgba(0, 0, 0, 0.3); /* More subtle, liquid overlay */
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 #contact-hero h1 {
