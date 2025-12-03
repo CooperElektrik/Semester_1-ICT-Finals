@@ -25,7 +25,7 @@
        }
 
        html {
-           scroll-snap-type: y mandatory;
+           scroll-snap-type: y proximity;
            scroll-behavior: smooth;
            overscroll-behavior-y: contain;
        }
@@ -69,7 +69,7 @@
            font-family: var(--font-sans);
            font-weight: 500;
            letter-spacing: 0.5px;
-           transition: 0.25s ease;
+           transition: all 0.3s ease-in-out;
        }
 
        nav a:hover {
@@ -371,7 +371,7 @@
            color: var(--accent-dark);
            cursor: pointer;
            padding: 0 10px;
-           transition: color 0.2s ease, transform 0.2s ease;
+           transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
            z-index: 10;
            line-height: 1;
        }
@@ -455,11 +455,12 @@
            font-size: 1.1rem;
            font-weight: 600;
            cursor: pointer;
-           transition: 0.3s ease;
+           transition: all 0.3s ease-in-out;
        }
 
        .ticket-form button:hover {
            background: #b94e28;
+           transform: scale(1.05);
        }
 
        footer {
@@ -494,11 +495,12 @@
        .footer-col a {
            color: #b9b7b4;
            font-family: var(--font-sans);
-           transition: 0.2s ease;
+           transition: all 0.3s ease-in-out;
        }
 
        .footer-col a:hover {
            color: #fff;
+           transform: translateY(-2px);
        }
 
        @media (max-width: 800px) {
@@ -558,7 +560,7 @@
     margin: 0 0.8em; /* add margin to match other nav links */
     font-weight: 500;
     letter-spacing: 0.5px;
-    transition: 0.25s ease;
+    transition: all 0.3s ease-in-out;
     cursor: pointer; /* ensure it looks clickable */
     /* Remove padding: 0; as margin now handles spacing */
 }
