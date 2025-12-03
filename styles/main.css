@@ -138,7 +138,7 @@
            position: relative;
            font-size: 4rem;
            font-weight: 700;
-           text-shadow: 0 4px 25px rgba(0,0,0,0.7); /* Increased blur and opacity */
+           text-shadow: 0 4px 25px rgba(0,0,0,0.7); /* Stronger white text-shadow */
            letter-spacing: -2px;
            line-height: 1;
            margin-bottom: 0.7rem;
@@ -154,7 +154,7 @@
            color: #fff; /* Changed from #f2eee7 to pure white */
            font-weight: 500; /* Increased from 300 */
            letter-spacing: 1px;
-           text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6); /* Increased blur and opacity */
+           text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
        }
 
        .about-grid {
@@ -603,4 +603,18 @@
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+/* Custom classes for logo and footer text */
+.logo-fes {
+    color: #b3b3b3;
+}
+
+.logo-archive {
+    color: var(--orange);
+}
+
+.footer-tagline {
+    color: #b3b3b3;
+    max-width: 300px;
 }

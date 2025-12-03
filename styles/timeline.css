@@ -2,7 +2,7 @@
 #timeline-hero {
     background-image: url('../assets/louis.jpg'); /* Using an existing asset */
     background-size: cover;
-    background-position: center;
+    background-position: center 35%;
     align-items: center;
     text-align: center;
     color: #fff;
@@ -23,12 +23,12 @@
     position: relative;
     font-size: 4rem;
     font-weight: 700;
-    letter-spacing: -2px;
+    letter-spacing: normal;
     line-height: 1;
     margin-bottom: 0.7rem;
     z-index: 1;
     color: #fff;
-    text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 0 0 25px rgba(255, 255, 255, 0.7); /* Stronger white text-shadow */
 }
 
 #timeline-hero p {
@@ -39,7 +39,7 @@
     color: #fff; /* Changed from #f2eee7 to pure white */
     font-weight: 500; /* Increased from 300 */
     letter-spacing: 1px;
-    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6); /* Increased blur and opacity */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Increased blur and opacity */
 }
 
 
